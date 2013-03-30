@@ -10,33 +10,33 @@ Usage
 
 Configure the proxies in the app.config. For example
 
-    <ReverseProxiesConfig type="ReverseProxy.ReverseProxiesConfig">
-   <Proxies>
+	<ReverseProxiesConfig type="ReverseProxy.ReverseProxiesConfig">
+		<Proxies>
 		<ReverseProxyConfig>
-		  <HostPort>8077</HostPort>
-		  <ForwardTo>
-			 <PortForwardConfig>
-				<ForwardToIp>127.0.0.1</ForwardToIp>
-				<ForwardToPort>80</ForwardToPort>
-			 </PortForwardConfig>
-			 <PortForwardConfig>
-				<ForwardToIp>127.0.0.1</ForwardToIp>
-				<ForwardToPort>81</ForwardToPort>
-			 </PortForwardConfig>
-		  </ForwardTo>
+			<HostPort>8077</HostPort>
+			<ForwardTo>
+				<PortForwardConfig>
+					<ForwardToIp>127.0.0.1</ForwardToIp>
+					<ForwardToPort>80</ForwardToPort>
+				</PortForwardConfig>
+				<PortForwardConfig>
+					<ForwardToIp>127.0.0.1</ForwardToIp>
+					<ForwardToPort>81</ForwardToPort>
+				</PortForwardConfig>
+			</ForwardTo>
 		</ReverseProxyConfig>
 		<ReverseProxyConfig>
-		  <HostPort>8078</HostPort>
-		  <ForwardTo>
-			 <PortForwardConfig>
-				<ForwardToIp>127.0.0.1</ForwardToIp>
-				<ForwardToPort>80</ForwardToPort>
-			 </PortForwardConfig>
-		  </ForwardTo>
+			<HostPort>8078</HostPort>
+			<ForwardTo>
+				<PortForwardConfig>
+					<ForwardToIp>127.0.0.1</ForwardToIp>
+					<ForwardToPort>80</ForwardToPort>
+				</PortForwardConfig>
+			</ForwardTo>
 		</ReverseProxyConfig>
-	 </Proxies>
+		</Proxies>
 	</ReverseProxiesConfig>
-
+	
 Here there are two proxies configured.
 
  1. From port 8077 to port 80 and 81
